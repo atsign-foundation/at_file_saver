@@ -1,6 +1,6 @@
 # at_file_saver
 
-A fork of [file_saver](https://github.com/incrediblezayed/file_saver).
+A fork of [file_saver](https://github.com/incrediblezayed/file_saver) to enable controlled release cycles.
 
 <img width=250px src="https://atsign.dev/assets/img/@platform_logo_grey.svg?sanitize=true">
 
