@@ -1,6 +1,10 @@
-# NOTE: Please use the latest git commit for now, I'll update the code and update the gradle versions, also I appreciate the pull requests with fixes, I'll check them out and merge them as soon as possible, Thank You & please wait for the pub release for now
+# at_file_saver
 
-# FileSaver
+A fork of [file_saver](https://github.com/incrediblezayed/file_saver).
+
+<img width=250px src="https://atsign.dev/assets/img/@platform_logo_grey.svg?sanitize=true">
+
+## Overview
 
 This plugin package is not much but only for saving files in Android, iOS, Web, Windows, MacOS and Linux. The package
 depends on path_provider for Android and iOS and basic html anchor for Web The main reason I built this plugin was to
@@ -47,7 +51,7 @@ Go to your project folder, ios/Runner/info.plist and Add these keys:
 <true/>
 ```
 
-![iOS](https://raw.githubusercontent.com/incrediblezayed/file_saver/main/images/ios.png)
+![iOS](images/ios.png)
 
 #### Or in XCode:
 
@@ -58,7 +62,7 @@ Application supports iTunes file sharing (Boolean -> Yes)
 
 Supports opening documents in place (Boolean -> Yes)
 
-![iOS Xcode](https://raw.githubusercontent.com/incrediblezayed/file_saver/main/images/iOSXcode.png)
+![iOS Xcode](images/iOSXcode.png)
 
 #### macOS:
 
@@ -74,7 +78,7 @@ and add the following key:
 <true/>
 ```
 
-![MacOS](https://raw.githubusercontent.com/incrediblezayed/file_saver/main/images/macos.png)
+![MacOS](images/macos.png)
 
 #### Or in XCode:
 
@@ -82,8 +86,21 @@ Open Your Project in XCode (Open XCode -> Open a project or file -> Your_Project
 Open your entitlement file (DebugProfile.entitlements & 'YOUR_PROJECT_NAME'Profile.entitlements)
 
 Add these rows:
-![MacOS Xcode](https://raw.githubusercontent.com/incrediblezayed/file_saver/main/images/macOSXcode.png)
+![MacOS Xcode](images/macOSXcode.png)
 
 #### And You're done
 
-## Thank You For Reading this far :)
+## Open source usage and contributions
+This is  open source code, so feel free to use it as is, suggest changes or 
+enhancements or create your own version. See [CONTRIBUTING.md](CONTRIBUTING.md) 
+for detailed guidance on how to setup tools, tests and make a pull request.
+
+Better yet, you can contribute to the original project [here](https://github.com/incrediblezayed/file_saver)!
+
+## Acknowledgement
+
+The original author of this package is [@incrediblezayed](https://github.com/incrediblezayed).
+
+## Maintainers
+
+[@XavierChanth](https://github.com/xavierchanth)
