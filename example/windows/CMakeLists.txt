@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
-project(file_saver_example LANGUAGES CXX)
+project(at_file_saver_example LANGUAGES CXX)
 
-set(BINARY_NAME "file_saver_example")
+set(BINARY_NAME "at_file_saver_example")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -1,4 +1,4 @@
-package com.one.file_saver
+package com.one.at_file_saver
 
 
 import android.util.Log
@@ -29,7 +29,7 @@ class FileSaverPlugin : FlutterPlugin, ActivityAware, MethodCallHandler {
         pluginBinding = flutterPluginBinding
         val messenger = pluginBinding?.binaryMessenger
         if(messenger!=null) {
-            methodChannel = MethodChannel(messenger, "file_saver")
+            methodChannel = MethodChannel(messenger, "at_file_saver")
             methodChannel?.setMethodCallHandler(this)
         }
     }

@@ -2,7 +2,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  const MethodChannel channel = MethodChannel('file_saver');
+  const MethodChannel channel = MethodChannel('at_file_saver');
 
   TestWidgetsFlutterBinding.ensureInitialized();
 

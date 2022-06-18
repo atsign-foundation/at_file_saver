@@ -1,4 +1,4 @@
-#include "include/file_saver/file_saver_plugin.h"
+#include "include/at_file_saver/file_saver_plugin.h"
 
 // This must be included before many other Windows headers.
 #include <windows.h>
@@ -36,7 +36,7 @@ void FileSaverPlugin::RegisterWithRegistrar(
     flutter::PluginRegistrarWindows *registrar) {
   auto channel =
       std::make_unique<flutter::MethodChannel<flutter::EncodableValue>>(
-          registrar->messenger(), "file_saver",
+          registrar->messenger(), "at_file_saver",
           &flutter::StandardMethodCodec::GetInstance());
 
   auto plugin = std::make_unique<FileSaverPlugin>();

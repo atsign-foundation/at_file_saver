@@ -1,4 +1,4 @@
-group 'com.one.file_saver'
+group 'com.one.at_file_saver'
 version '1.0-SNAPSHOT'
 
 buildscript {

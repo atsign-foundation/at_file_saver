@@ -1,4 +1,4 @@
-#include "include/file_saver/file_saver_plugin.h"
+#include "include/at_file_saver/file_saver_plugin.h"
 
 #include <flutter_linux/flutter_linux.h>
 #include <gtk/gtk.h>
@@ -6,18 +6,18 @@
 
 #include <cstring>
 
-#define FILE_SAVER_PLUGIN(obj) \
-  (G_TYPE_CHECK_INSTANCE_CAST((obj), file_saver_plugin_get_type(), \
+#define at_file_saver_PLUGIN(obj) \
+  (G_TYPE_CHECK_INSTANCE_CAST((obj), at_file_saver_plugin_get_type(), \
                               FileSaverPlugin))
 
 struct _FileSaverPlugin {
   GObject parent_instance;
 };
 
-G_DEFINE_TYPE(FileSaverPlugin, file_saver_plugin, g_object_get_type())
+G_DEFINE_TYPE(FileSaverPlugin, at_file_saver_plugin, g_object_get_type())
 
 // Called when a method call is received from Flutter.
-static void file_saver_plugin_handle_method_call(
+static void at_file_saver_plugin_handle_method_call(
     FileSaverPlugin* self,
     FlMethodCall* method_call) {
   g_autoptr(FlMethodResponse) response = nullptr;
@@ -37,30 +37,30 @@ static void file_saver_plugin_handle_method_call(
   fl_method_call_respond(method_call, response, nullptr);
 }
 
-static void file_saver_plugin_dispose(GObject* object) {
-  G_OBJECT_CLASS(file_saver_plugin_parent_class)->dispose(object);
+static void at_file_saver_plugin_dispose(GObject* object) {
+  G_OBJECT_CLASS(at_file_saver_plugin_parent_class)->dispose(object);
 }
 
-static void file_saver_plugin_class_init(FileSaverPluginClass* klass) {
-  G_OBJECT_CLASS(klass)->dispose = file_saver_plugin_dispose;
+static void at_file_saver_plugin_class_init(FileSaverPluginClass* klass) {
+  G_OBJECT_CLASS(klass)->dispose = at_file_saver_plugin_dispose;
 }
 
-static void file_saver_plugin_init(FileSaverPlugin* self) {}
+static void at_file_saver_plugin_init(FileSaverPlugin* self) {}
 
 static void method_call_cb(FlMethodChannel* channel, FlMethodCall* method_call,
                            gpointer user_data) {
-  FileSaverPlugin* plugin = FILE_SAVER_PLUGIN(user_data);
-  file_saver_plugin_handle_method_call(plugin, method_call);
+  FileSaverPlugin* plugin = at_file_saver_PLUGIN(user_data);
+  at_file_saver_plugin_handle_method_call(plugin, method_call);
 }
 
-void file_saver_plugin_register_with_registrar(FlPluginRegistrar* registrar) {
-  FileSaverPlugin* plugin = FILE_SAVER_PLUGIN(
-      g_object_new(file_saver_plugin_get_type(), nullptr));
+void at_file_saver_plugin_register_with_registrar(FlPluginRegistrar* registrar) {
+  FileSaverPlugin* plugin = at_file_saver_PLUGIN(
+      g_object_new(at_file_saver_plugin_get_type(), nullptr));
 
   g_autoptr(FlStandardMethodCodec) codec = fl_standard_method_codec_new();
   g_autoptr(FlMethodChannel) channel =
       fl_method_channel_new(fl_plugin_registrar_get_messenger(registrar),
-                            "file_saver",
+                            "at_file_saver",
                             FL_METHOD_CODEC(codec));
   fl_method_channel_set_method_call_handler(channel, method_call_cb,
                                             g_object_ref(plugin),

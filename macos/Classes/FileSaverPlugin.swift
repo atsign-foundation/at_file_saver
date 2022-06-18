@@ -3,7 +3,7 @@ import FlutterMacOS
 
 public class FileSaverPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "file_saver", binaryMessenger: registrar.messenger)
+    let channel = FlutterMethodChannel(name: "at_file_saver", binaryMessenger: registrar.messenger)
     let instance = FileSaverPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }

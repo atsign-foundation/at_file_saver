@@ -7,3 +7,5 @@
 build/
 example/pubspec.lock
 .idea/libraries/Dart_SDK.xml
+
+.idea/

@@ -14,7 +14,7 @@ import 'package:flutter_web_plugins/flutter_web_plugins.dart';
 class FileSaverWeb {
   static void registerWith(Registrar registrar) {
     final MethodChannel channel = MethodChannel(
-      'file_saver',
+      'at_file_saver',
       const StandardMethodCodec(),
       registrar,
     );
@@ -38,7 +38,7 @@ class FileSaverWeb {
       default:
         throw PlatformException(
           code: 'Unimplemented',
-          details: 'file_saver for web doesn\'t implement \'${call.method}\'',
+          details: 'at_file_saver for web doesn\'t implement \'${call.method}\'',
         );
     }
   }

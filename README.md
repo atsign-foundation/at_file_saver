@@ -1,6 +1,6 @@
 # at_file_saver
 
-A fork of [file_saver](https://github.com/incrediblezayed/file_saver).
+A fork of [at_file_saver](https://github.com/incrediblezayed/at_file_saver).
 
 <img width=250px src="https://atsign.dev/assets/img/@platform_logo_grey.svg?sanitize=true">
 
@@ -91,11 +91,12 @@ Add these rows:
 #### And You're done
 
 ## Open source usage and contributions
-This is  open source code, so feel free to use it as is, suggest changes or 
-enhancements or create your own version. See [CONTRIBUTING.md](CONTRIBUTING.md) 
+
+This is open source code, so feel free to use it as is, suggest changes or
+enhancements or create your own version. See [CONTRIBUTING.md](CONTRIBUTING.md)
 for detailed guidance on how to setup tools, tests and make a pull request.
 
-Better yet, you can contribute to the original project [here](https://github.com/incrediblezayed/file_saver)!
+Better yet, you can contribute to the original project [here](https://github.com/incrediblezayed/at_file_saver)!
 
 ## Acknowledgement
 

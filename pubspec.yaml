@@ -1,14 +1,13 @@
 name: at_file_saver
 description: >-
-  Fork of file_saver to enable controlled release cycles.
+  Fork of at_file_saver to enable controlled release cycles.
   This package will help you save file with a single method on any platform
   including macOS, iOS, Android, Windows, Web, Linux.
 version: 0.1.0
-
 repository: https://github.com/atsign-foundation/at_file_saver
 
 environment:
-  sdk: '>=2.12.0 <3.0.0'
+  sdk: ">=2.12.0 <3.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
@@ -28,7 +27,7 @@ flutter:
   plugin:
     platforms:
       android:
-        package: com.one.file_saver
+        package: com.one.at_file_saver
         pluginClass: FileSaverPlugin
       ios:
         pluginClass: FileSaverPlugin
@@ -40,4 +39,4 @@ flutter:
         pluginClass: FileSaverPlugin
       web:
         pluginClass: FileSaverWeb
-        fileName: file_saver_web.dart
+        fileName: at_file_saver_web.dart

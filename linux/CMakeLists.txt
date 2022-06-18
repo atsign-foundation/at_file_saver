@@ -1,13 +1,13 @@
 cmake_minimum_required(VERSION 3.10)
-set(PROJECT_NAME "file_saver")
+set(PROJECT_NAME "at_file_saver")
 project(${PROJECT_NAME} LANGUAGES CXX)
 
 # This value is used when generating builds using this plugin, so it must
 # not be changed
-set(PLUGIN_NAME "file_saver_plugin")
+set(PLUGIN_NAME "at_file_saver_plugin")
 
 add_library(${PLUGIN_NAME} SHARED
-  "file_saver_plugin.cc"
+  "at_file_saver_plugin.cc"
 )
 apply_standard_settings(${PLUGIN_NAME})
 set_target_properties(${PLUGIN_NAME} PROPERTIES
@@ -19,7 +19,7 @@ target_link_libraries(${PLUGIN_NAME} PRIVATE flutter)
 target_link_libraries(${PLUGIN_NAME} PRIVATE PkgConfig::GTK)
 
 # List of absolute paths to libraries that should be bundled with the plugin
-set(file_saver_bundled_libraries
+set(at_file_saver_bundled_libraries
   ""
   PARENT_SCOPE
 )

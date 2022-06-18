@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.10)
 project(runner LANGUAGES CXX)
 
-set(BINARY_NAME "file_saver_example")
-set(APPLICATION_ID "com.one.file_saver")
+set(BINARY_NAME "at_file_saver_example")
+set(APPLICATION_ID "com.one.at_file_saver")
 
 cmake_policy(SET CMP0063 NEW)
 

@@ -1,6 +1,6 @@
-# file_saver_example
+# at_file_saver_example
 
-Demonstrates how to use the file_saver plugin.
+Demonstrates how to use the at_file_saver plugin.
 
 ## Getting Started
 
