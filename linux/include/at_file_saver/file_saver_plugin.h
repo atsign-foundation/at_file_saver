@@ -18,7 +18,7 @@ typedef struct {
 
 FLUTTER_PLUGIN_EXPORT GType at_file_saver_plugin_get_type();
 
-FLUTTER_PLUGIN_EXPORT void at_file_saver_plugin_register_with_registrar(
+FLUTTER_PLUGIN_EXPORT void file_saver_plugin_register_with_registrar(
     FlPluginRegistrar* registrar);
 
 G_END_DECLS
