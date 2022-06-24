@@ -53,7 +53,7 @@ static void method_call_cb(FlMethodChannel* channel, FlMethodCall* method_call,
   at_file_saver_plugin_handle_method_call(plugin, method_call);
 }
 
-void at_file_saver_plugin_register_with_registrar(FlPluginRegistrar* registrar) {
+void file_saver_plugin_register_with_registrar(FlPluginRegistrar* registrar) {
   FileSaverPlugin* plugin = at_file_saver_PLUGIN(
       g_object_new(at_file_saver_plugin_get_type(), nullptr));
 
