@@ -5,7 +5,7 @@ In order to maintain some of our packages on the atPlatform, we've forked file_s
 In doing so, we are able to maintain controlled release cycles which ensures that our other packages and apps in 
 production are stable.
 
-<img width=250px src="https://atsign.dev/assets/img/@platform_logo_grey.svg?sanitize=true">
+<img width=250px src="https://atsign.dev/assets/img/atPlatform_logo_gray.svg?sanitize=true">
 
 ## Overview
 
