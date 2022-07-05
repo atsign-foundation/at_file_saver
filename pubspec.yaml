@@ -3,7 +3,7 @@ description: >-
   Fork of at_file_saver to enable controlled release cycles.
   This package will help you save file with a single method on any platform
   including macOS, iOS, Android, Windows, Web, Linux.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/atsign-foundation/at_file_saver
 
 environment:
