@@ -1,3 +1,6 @@
+## 0.1.2
+  - fix: replaced getDownloadsDirectory with getApplicationDocumentsDirectory for macOS.
+
 ## 0.1.1
   - fix: plugin naming issues on various platforms (due to fork & rename).
 
